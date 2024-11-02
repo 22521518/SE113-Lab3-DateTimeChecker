@@ -12,21 +12,21 @@ namespace DateTimeChecker
 {
     public partial class Form1 : Form
     {
-        DateCheck dateCheck;
+        readonly DateCheck dateCheck;
         public Form1()
         {
             InitializeComponent();
             dateCheck = new DateCheck();
         }
 
-        private void clearBtn_Click(object sender, EventArgs e)
+        private void ClearBtn_Click(object sender, EventArgs e)
         {
             dayTextBox.Clear();
             monthTextBox.Clear();
             yearTextBox.Clear();
         }
 
-        private void checkBtn_Click(object sender, EventArgs e)
+        private void CheckBtn_Click(object sender, EventArgs e)
         {
             if (!byte.TryParse(dayTextBox.Text, out _))
             {

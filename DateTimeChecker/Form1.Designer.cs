@@ -114,7 +114,7 @@
             this.clearBtn.TabIndex = 7;
             this.clearBtn.Text = "Clear";
             this.clearBtn.UseVisualStyleBackColor = true;
-            this.clearBtn.Click += new System.EventHandler(this.clearBtn_Click);
+            this.clearBtn.Click += new System.EventHandler(this.ClearBtn_Click);
             // 
             // checkBtn
             // 
@@ -125,7 +125,7 @@
             this.checkBtn.TabIndex = 8;
             this.checkBtn.Text = "Check";
             this.checkBtn.UseVisualStyleBackColor = true;
-            this.checkBtn.Click += new System.EventHandler(this.checkBtn_Click);
+            this.checkBtn.Click += new System.EventHandler(this.CheckBtn_Click);
             // 
             // Form1
             // 
