@@ -160,6 +160,10 @@
         private System.Windows.Forms.Label yearLabel;
         private System.Windows.Forms.Button clearBtn;
         private System.Windows.Forms.Button checkBtn;
+
+        public System.Windows.Forms.TextBox DayTextBox { get => dayTextBox; }
+        public System.Windows.Forms.TextBox MonthTextBox { get => monthTextBox;  }
+        public System.Windows.Forms.TextBox YearTextBox { get => yearTextBox; }
     }
 }
 

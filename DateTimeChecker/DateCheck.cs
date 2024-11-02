@@ -9,7 +9,7 @@ namespace DateTimeChecker
     internal class DateCheck
     {
 
-        int DaysInMonth(int month, int year)
+        public int DaysInMonth(sbyte month, short year)
         {
 
             if (month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12)
@@ -45,7 +45,7 @@ namespace DateTimeChecker
             }
         }
 
-        public bool IsValidDate(short year, byte month, byte day)
+        public bool IsValidDate(short year, sbyte month, sbyte day)
         {
             if (year < 1 || month < 1 || month > 12 || day < 1)
             {
@@ -54,12 +54,12 @@ namespace DateTimeChecker
             return day <= DaysInMonth(month, year);
         }
 
-        public bool IsDayInRange(byte day)
+        public bool IsDayInRange(sbyte day)
         {
             return day >= 1 && day <= 31;
         }
 
-        public bool IsMonthInRange(byte month)
+        public bool IsMonthInRange(sbyte month)
         {
             return month >= 1 && month <= 12;
         }

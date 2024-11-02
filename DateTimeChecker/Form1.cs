@@ -19,14 +19,14 @@ namespace DateTimeChecker
             dateCheck = new DateCheck();
         }
 
-        private void ClearBtn_Click(object sender, EventArgs e)
+        public void ClearBtn_Click(object sender, EventArgs e)
         {
             dayTextBox.Clear();
             monthTextBox.Clear();
             yearTextBox.Clear();
         }
 
-        private void CheckBtn_Click(object sender, EventArgs e)
+        public void CheckBtn_Click(object sender, EventArgs e)
         {
             if (!byte.TryParse(dayTextBox.Text, out _))
             {
@@ -42,8 +42,8 @@ namespace DateTimeChecker
             }
             else
             {
-                byte day = byte.Parse(dayTextBox.Text);
-                byte month = byte.Parse(monthTextBox.Text);
+                sbyte day = sbyte.Parse(dayTextBox.Text);
+                sbyte month = sbyte.Parse(monthTextBox.Text);
                 short year = short.Parse(yearTextBox.Text);
 
                 string inputDate = $"{day:D2}/{month:D2}/{year:D4}";
@@ -73,7 +73,7 @@ namespace DateTimeChecker
             }
         }
 
-        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        public void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (MessageBox.Show("Are you sure you want to exit?", "Exit", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
             {
